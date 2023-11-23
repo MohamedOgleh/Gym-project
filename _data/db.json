@@ -1,0 +1,104 @@
+{
+    "users": [
+      {
+        "userId": 1,
+        "firstname": "Mohamed",
+        "username": "ogleh",
+        "gander": "Male",
+        "image": "male1.jpg",
+        "role": "user"
+      },
+      {
+        "userId": 2,
+        "firstname": "Muna",
+        "username": "munka",
+        "gander": "Female",
+        "image": "female1.jpg",
+        "role": "superadmin"
+      },
+      {
+        "userId": 3,
+        "firstname": "Bashiir",
+        "username": "bashka",
+        "gander": "Male",
+        "image": "male2.jpg",
+  
+        "role": "user"
+      },
+      {
+        "userId": 4,
+        "firstname": "Asma",
+        "username": "asma",
+        "gander": "Female",
+        "image": "female2.jpg",
+        "role": "admin"
+      },
+      {
+        "userId": 1,
+        "firstname": "Mohamed",
+        "username": "ogleh",
+        "gander": "Male",
+        "image": "male1.jpg",
+        "role": "user"
+      },
+      {
+        "userId": 2,
+        "firstname": "Muna",
+        "username": "munka",
+        "gander": "Female",
+        "image": "female1.jpg",
+        "role": "superadmin"
+      },
+      {
+        "userId": 3,
+        "firstname": "Bashiir",
+        "username": "bashka",
+        "gander": "Male",
+        "image": "male2.jpg",
+  
+        "role": "user"
+      },
+      {
+        "userId": 4,
+        "firstname": "Asma",
+        "username": "asma",
+        "gander": "Female",
+        "image": "female2.jpg",
+        "role": "admin"
+      },
+      {
+        "userId": 1,
+        "firstname": "Mohamed",
+        "username": "ogleh",
+        "gander": "Male",
+        "image": "male1.jpg",
+        "role": "user"
+      },
+      {
+        "userId": 2,
+        "firstname": "Muna",
+        "username": "munka",
+        "gander": "Female",
+        "image": "female1.jpg",
+        "role": "superadmin"
+      },
+      {
+        "userId": 3,
+        "firstname": "Bashiir",
+        "username": "bashka",
+        "gander": "Male",
+        "image": "male2.jpg",
+  
+        "role": "user"
+      },
+      {
+        "userId": 4,
+        "firstname": "Asma",
+        "username": "asma",
+        "gander": "Female",
+        "image": "female2.jpg",
+        "role": "admin"
+      }
+    ]
+  }
+  
