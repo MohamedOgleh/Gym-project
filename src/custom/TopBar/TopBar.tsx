@@ -7,7 +7,7 @@ import SearchItem from "./SearchItem";
 
 function TopBar() {
   return (
-    <div className="flex justify-between items-center h-16 px-4 py-2 gap-10">
+    <div className="flex justify-between items-center h-20 px-4 py-2 gap-10">
       <Logo />
       <Search >
         <SearchItem />

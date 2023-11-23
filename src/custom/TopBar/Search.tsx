@@ -11,15 +11,14 @@ import {
 function Search({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="max-h-9 max-w-4xl flex-1">
-      <Command>
+    <div className="max-h-10 max-w-4xl flex-1">
+      <Command className="rounded-xl border border-b-0 shadow-sm bg-[#f6f8fc]">
         <CommandInput
           placeholder="Type a name or contacts of the customer..."
-          className="border-b-0"
           onFocus={() => setOpen(true)}
           onBlur={() => setOpen(false)}
         />
-        <CommandList className={`${open ? "" : "hidden"} `}>
+        <CommandList className={`${open ? "" : "hidden"} bg-[#f6f8fc]`}>
           <CommandEmpty>No results found.</CommandEmpty>
           <CommandGroup heading="Suggestions">{children}</CommandGroup>
         </CommandList>

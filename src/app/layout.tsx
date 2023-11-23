@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import SideBar from "@/custom/SideBar/SideBar";
+import TopBar from "@/custom/TopBar/TopBar";
 // import { ThemeProvider  } from "next-themes"
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,16 +19,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#e5f4fb]`}>
-      {/* <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            
-          </ThemeProvider> */}
-          {children}
+      <body className={`${inter.className} bg-[#e5f4fb] `}>
+      
+        <div className="">
+          <TopBar />
+        </div>
+        <div className="flex gap-3">
+          <SideBar />{children}
+        </div>
+        
+        
       </body>
     </html>
   );

@@ -1,4 +1,3 @@
-
 import Profile from "./Profile";
 import { Bell, Moon, MoonIcon, Settings, Sun, User2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -11,7 +10,7 @@ function LeftIcons() {
         <Button
           variant="ghost"
           size="icon"
-          className="hover:bg-secondary hover:text-white"
+          className="hover:bg-secondary hover:text-white focus:bg-secondary focus:text-white"
         >
           <Bell />
         </Button>
@@ -19,21 +18,21 @@ function LeftIcons() {
         <Button
           variant="ghost"
           size="icon"
-          className="hover:bg-secondary hover:text-white"
+          className="hover:bg-secondary hover:text-white focus:bg-secondary focus:text-white"
         >
           <User2 />
         </Button>
         <Button
           variant="ghost"
           size="icon"
-          className="hover:bg-secondary hover:text-white"
+          className="hover:bg-secondary hover:text-white focus:bg-secondary focus:text-white"
         >
           <Sun />
         </Button>
         <Button
           variant="ghost"
           size="icon"
-          className="hover:bg-secondary hover:text-white"
+          className="hover:bg-secondary hover:text-white focus:bg-secondary focus:text-white"
         >
           <Settings />
         </Button>

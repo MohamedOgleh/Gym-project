@@ -6,6 +6,7 @@ import {
   Home,
   AlignEndHorizontal,
   Menu,
+  LogOut,
 } from "lucide-react";
 
 interface ItemProp {
@@ -19,6 +20,7 @@ export const SideBarItems: ItemProp[] = [
   { title: "Payments", icon: <Banknote className="h-5 w-5" /> },
   { title: "History", icon: <History className="h-5 w-5" /> },
   { title: "Reports", icon: <AlignEndHorizontal className="h-5 w-5" /> },
+  { title: "Logout", icon: <LogOut className="h-5 w-5" /> }
 ];
 
 export const TopBarItems: ItemProp[] = [
