@@ -12,8 +12,6 @@ function SideBarItem() {
         <Button
           key={index}
           className={`flex justify-start gap-4 ${
-            index == SideBarItems.length - 1 ? "mt-[60%]" : ""
-          }  ${
             openIndex === index
               ? "bg-secondary text-[#E5F4FB] hover:bg-secondary hover:text-[#E5F4FB]"
               : "hover:text-primary hover:bg-primary-foreground"
