@@ -1,13 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { SideBarItems as items } from "@/models/Items";
+import { PersonStanding } from "lucide-react";
 
 function SideBar() {
   return (
-    <div className="flex flex-col items-center mt-11 gap-3 h-screen w-60 text-primary-foreground ">
-      <Label className="self-start text-muted-foreground text-md ml-6 mb-4">
-        Customer care
-      </Label>
+    <div className="flex flex-col shrink-0 items-center mt-11 gap-3 h-screen w-60 text-primary-foreground   ">
+      <div className="flex gap-3">
+        <PersonStanding className="self-start  text-muted-foreground"/>
+        <Label className=" text-muted-foreground text-md mb-3">
+          Customer care
+        </Label>
+      </div>
+      
       {items.map((item) => (
         <Button
           variant="ghost"
