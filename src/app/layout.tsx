@@ -26,10 +26,13 @@ export default function RootLayout({
           <header className={styles.topBar}>
             <TopBar />
           </header>
+
           <aside className={styles.sideBar}>
             <SideBar />
           </aside>
+
           <main className={styles.main}>{children}</main>
+
           <footer className={styles.footer}>I am footer</footer>
         </div>
       </body>

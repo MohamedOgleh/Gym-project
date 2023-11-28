@@ -6,6 +6,9 @@
     "side content content"
     "side foter foter";
   grid-template-rows: 50px auto 50px;
+  grid-template-columns: 230px 1fr;
+
+  background-color: aqua;
 }
 
 .topBar {
@@ -14,13 +17,13 @@
 }
 
 .sideBar {
-  width: 230px;
+  /* width: 230px; */
   grid-area: side;
   background: brown;
 }
 
 .wrapper {
-  background: dodgerblue;
+  background: darkgreen;
 }
 .main {
   grid-area: content;
