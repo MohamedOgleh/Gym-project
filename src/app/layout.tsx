@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import SideBar from "@/components/SideBar/SideBar";
- 
+import TopBar from "@/components/TopBar/TopBar";
+import styles from "./main.module.css";
+
 // import { ThemeProvider  } from "next-themes"
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400"] });
@@ -19,12 +21,29 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} bg-[#E5F4FB]`}>
-        <div className="h-screen bg-primary  w-[230px]">
-          <SideBar />
+      <body className={`${roboto.className} bg-[#E5F4FB] ${styles.wrapper}`}>
+        <div className={styles.parent}>
+          <header className={styles.topBar}>
+            <TopBar />
+          </header>
+          <aside className={styles.sideBar}>
+            <SideBar />
+          </aside>
+          <main className={styles.main}>{children}</main>
+          <footer className={styles.footer}>I am footer</footer>
         </div>
-        {children}
       </body>
     </html>
   );
+}
+{
+  /* <html lang="en">
+<body className={`${roboto.className} bg-[#E5F4FB] flex `}>
+  <div className="h-screen bg-primary  w-[230px] flex flex-col">
+    <TopBar/>
+    <SideBar />
+  </div>
+  {children}
+</body>
+</html> */
 }

@@ -1,0 +1,32 @@
+.parent {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "side head head"
+    "side content content"
+    "side foter foter";
+  grid-template-rows: 50px auto 50px;
+}
+
+.topBar {
+  grid-area: head;
+  background: red;
+}
+
+.sideBar {
+  width: 230px;
+  grid-area: side;
+  background: brown;
+}
+
+.wrapper {
+  background: dodgerblue;
+}
+.main {
+  grid-area: content;
+  background: yellowgreen;
+}
+.footer {
+  grid-area: foter;
+  background: gray;
+}
