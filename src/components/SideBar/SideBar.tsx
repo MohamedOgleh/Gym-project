@@ -19,7 +19,7 @@ function SideBar() {
         <Label
           className={`${aladin.className} text-primary-foreground text-2xl`}
         >
-          TOGDHEER <span className="text-secondary-foreground">GYM</span>
+          My <span className="text-secondary-foreground">App</span>
         </Label>
       </div>
       {/* Menu */}

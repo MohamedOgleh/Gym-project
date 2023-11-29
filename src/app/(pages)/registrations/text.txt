@@ -1,0 +1,111 @@
+
+
+
+<div>
+      <div className={`${leftIcon || rightIcon ? "max-w-2xl bg-yellow-400 border-r-secondary rounded-none" : ""}`}>
+        <Input
+          type={type}
+          placeholder={inputPlaceHolder}
+          className={twMerge(
+            `${
+              leftIcon || rightIcon ? "max-w-md" : "max-w-xs"
+            } border-primary h-[40px] rounded-none`,
+            className
+          )}
+        />
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+import { ReactNode } from "react";
+import { Roboto } from "next/font/google";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Eye, Lock } from "lucide-react";
+
+const roboto = Roboto({ subsets: ["latin"], weight: ["900"] });
+
+interface inputProps {
+  inputTitle: string;
+  inputPlaceHolder: string;
+  leftIcon?: ReactNode;
+  rightIcon?: ReactNode;
+}
+
+function Inputs({
+  inputTitle,
+  inputPlaceHolder,
+  leftIcon,
+  rightIcon,
+}: inputProps) {
+  return (
+    <div className="flex flex-col gap-1 bg-">
+      <Label className={`text-primary font-sans text-md`}>{inputTitle}</Label>
+      <div className="flex items-center gap-2 ">
+        <Lock/>
+        <Input
+          type="text"
+          placeholder={inputPlaceHolder}
+          className="max-w-xs  border-primary h-[40px] rounded-none "
+        />
+        <Eye/>
+      </div>
+    </div>
+  );
+}
+
+export default Inputs;
+
+
+
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { cn } from "@/lib/utils";
+
+import { ComponentProps, ReactNode } from "react";
+
+interface inputProps {
+  inputTitle: string;
+  inputPlaceHolder: string;
+  leftIcon?: ReactNode;
+  rightIcon?: ReactNode;
+}
+
+type props = inputProps & ComponentProps<"input">;
+
+function Inputs({
+  inputTitle,
+  inputPlaceHolder,
+  leftIcon,
+  rightIcon,
+  className,
+}: props) {
+  return (
+    <div>
+      <Label className={`text-primary font-sans text-md`}>{inputTitle}</Label>
+      <div className={`bg-yellow-200 border-1 max-w-lg`}>
+        <Input
+          type="text"
+          placeholder={inputPlaceHolder}
+          className={cn(
+            "max-w-xs border-primary h-[40px] rounded-none  ",
+            className
+          )}
+        />
+      </div>
+    </div>
+  );
+}
+
+export default Inputs;
+

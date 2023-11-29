@@ -21,19 +21,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} bg-[#E5F4FB] ${styles.wrapper}`}>
+      <body className={`${roboto.className} bg-[#E5F4FB]`}>
         <div className={styles.parent}>
-          <header className={styles.topBar}>
+          <header className={`${styles.topBar} border-b`}>
             <TopBar />
           </header>
 
-          <aside className={styles.sideBar}>
+          <aside className={`${styles.sideBar} bg-primary`}>
             <SideBar />
           </aside>
 
           <main className={styles.main}>{children}</main>
 
-          <footer className={styles.footer}>I am footer</footer>
+          <footer className={`${styles.footer} border-t`}>I am footer</footer>
         </div>
       </body>
     </html>

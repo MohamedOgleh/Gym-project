@@ -7,29 +7,20 @@
     "side foter foter";
   grid-template-rows: 50px auto 50px;
   grid-template-columns: 230px 1fr;
-
-  background-color: aqua;
 }
 
 .topBar {
   grid-area: head;
-  background: red;
 }
 
 .sideBar {
-  /* width: 230px; */
   grid-area: side;
-  background: brown;
 }
 
-.wrapper {
-  background: darkgreen;
-}
 .main {
   grid-area: content;
-  background: yellowgreen;
+
 }
 .footer {
   grid-area: foter;
-  background: gray;
 }
